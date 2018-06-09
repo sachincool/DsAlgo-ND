@@ -35,15 +35,26 @@ def Question2(a):
             maxLPSIndex=i
     return "Input String :{} \n Longest Palindromic SubString {}".format(a,s[maxLPSIndex - p[maxLPSIndex]:maxLPSIndex + 1 +p[maxLPSIndex]].replace('*',''))
 
+import collections
 
-print Question2("abababa")
-# LongestPalindromicSubstring "abababa"
-print Question2("abacdfgdcaba")
-# LongestPalindromicSubstring "aba"
-print Question2("")
-# LongestPalindromicSubstring "No String found"
-print Question2("abcdefgh")
-# LongestPalindromicSubstring "a"
+def Question3(G):
+    """Given an undirected graph G, find the minimum spanning tree within G. A minimum spanning tree connects all vertices in a graph with the smallest possible total weight of edges. Your function should take in and return an adjacency list structured like this:"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -53,5 +64,15 @@ print Question1("abdc","abd")
 print Question1(""," ad")
 # False
 print Question1(""," ")
-# False"""
+# False
 
+
+print Question2("abababa")
+# LongestPalindromicSubstring "abababa"
+print Question2("abacdfgdcaba")
+# LongestPalindromicSubstring "aba"
+print Question2("")
+# LongestPalindromicSubstring "No String found"
+print Question2("abcdefgh")
+# LongestPalindromicSubstring "a"
+"""
