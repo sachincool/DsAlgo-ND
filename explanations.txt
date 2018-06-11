@@ -1,0 +1,28 @@
+Question1 :- Here I went with the simple approach, Dividing the bigger string into chunks of same len as the small one and Sorting both to check if they match.  
+Time Complexity= O(n) 1 loop 
+Space Complexity= O(1) we're not taking any extra space in memory buffer.
+
+========================================================================
+
+Question2 :- Here I went with the most efficient Algo which is known as Manacher's Algo. It uses the properties of Palindrome to Drop the complexity from O(n^2) To O(n). We calculate the left side of Palindrome and copy the values for the right side of palindrome (Since they are mirrors). similarly we loop and pay attention to the largest/longest Length we get. and print the substring. Note: I went with adding special characters in the string. reason is now I don't have to worry if the length of string is odd or even to find the palindrome. 
+
+Time Complexity = O(n)
+Space Complexity=O(n) we are using an list of same  Length as the input string.
+
+========================================================================
+Question3 :- I had two approaches, Kruskal's or Prim's Algo, I went with Kurskal's Algorithm because it was more easy to implement and i understood it much better. We use Disjoint sets to take care of cycles and never allow them in our spanning tree. I also used the property of (V-1) to check if my number of spanning tree is correct. Sort the graph based on weights.union them and add them to your result. Print it.
+
+Time Complexity = O(ELogE +ELogV) or O(E Log V) 
+Space Complexity= O(E) Where E =Edges and V= vertices
+
+========================================================================
+Question4 :- Matrix was an Adjacency list, I had to just implement the BST code, add Lca function which simply traverses from root to the parent of nodes till it find the appropriate  (n1<parent<n2) condition and returns the parent. note:- n1 or n2 can be parent of itself as well in which case we return either n1 or n2. Add columns from T matrix in my BST run the lca on 2 nodes  that's it.
+
+Time Complexity = O(log(n))
+Space Complexity = O(1) 
+
+========================================================================
+Question5 :- Implemented LinkedList with only 1 function (as we only needed 1 here). I used 2 pointers of the head, 1 pointer is used as reference and 2nd pointer is our main pointer. we increment the pointer1 to its next node till (m-1), then run our second loop untill pointer 1 reaches end of LinkedList. and the data of pointer2 is our result. 
+
+Time Complexity = O(n)
+Space Complexity = O(1) 
